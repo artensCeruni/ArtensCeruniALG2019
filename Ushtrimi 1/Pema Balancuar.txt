@@ -1,0 +1,63 @@
+Pershkrimi
+
+
+
+==============================================================================================================
+
+
+
+Implementimi i fjalorit duke perdorur pemen e balancuar.
+Per te shtuar nje element ne pemen e balancuar ne fillim behet shtimi si ne pemen e kerkimit binar.
+Me pas duke u nisur nga kulmi i shtuar gjejme kulmin e pare te pabalancuar dhe marrim fmijen e ketij kulmi nga shtegu ku erdhem dhe nipin e ketij kulmi nga shtegu ku erdhem duke i shenuar perkatesisht me y  dhe x.
+Ne varesi te vendodhjes se ketyre dy kulmeve dallohen 4 raste.Dhe per secilin rast behen rrotullimet e pershtatshme.Ne rast se nuk gjendet asnje kulm i pabalancuar nk behet asgje.
+
+
+
+
+==============================================================================================================
+
+
+
+
+
+Koha e ekzekutimit kur skedari kishte 100 fjale=0.09 sekonda
+
+Koha e ekzekutimit kur skedari kishte 1000 fjale  = 0.1 sekonda
+
+Koha e ekzekutimit kur skedari kishte 10000 fjale  = 0.8 sekonda
+
+Koha e ekzekutimit kur skedari kishte 100000 fjale  = 3.3 sekonda
+
+Koha e ekzekutimit kur skedari kishte 1000000 fjale  = 12 sekonda
+
+--------------------------------------------------------------------------------------------------------------
+Kjo menyre e implementimit te fjalorit ishte me e shpejta nga te tjerat
+
+--------------------------------------------------------------------------------------------------------------
+
+
+Kompleksiteti
+
+
+Perderi sa elementi i shtuar do te vendoset ne njeren ane ose tjeter te nyjeve atehere koha e ekzekutimit do te ishte Log2(n)  (logaritem me baze 2 i n)
+
+Afishimi kerkon kohen e ekzekutimit n*Texe pasi do te afishohen te gjitha fjalet
+
+Leximi nga skedari kerkon kohen n*Texe pasi do te lexohen te gjtha fjalet
+
+
+
+
+Log2(n)*Texe1+n*Texe2+n*Texe3=Log2(n)+n*(Texe2+Texe3) 
+
+Kompleksiteti vetem per shtimin eshte Log2(n)
+
+
+ku:
+   
+
+Texe1=koha ekzekutimit te opeacioneve te vlerdhenies  
+   
+Texe2=koha ekzekutimit te operacioneve te afishimit
+   
+Texe3=koha ekzekutimit te operacioneve te leximit nga skedari

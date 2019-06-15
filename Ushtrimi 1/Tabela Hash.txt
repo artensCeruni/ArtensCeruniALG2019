@@ -1,0 +1,75 @@
+Pershkrimi
+
+
+==============================================================================================================
+
+
+Implementimi i Fjalorit duke perdorur tabelen hash.
+
+
+==============================================================================================================
+
+
+Ne fillim kthej fjalen ne nje numer int duke patur parasysh qe dy fjale te mos kene te njejtin numer.
+Krijoj nje tabele me lista te lidhura.
+Me pas bej modulin me madhesine e tabeles kundrejt numrit int te fjales per te llogaritur kodin hash.
+Fjala pastaj shtohet ne pozicionin e caktuar dhe vendoset ne fillim te listes ne ate pozicion duke patur parasysh qe ne fillim te behete nje konroll nqs fjala gjendet ne liste.
+
+Afishimi behet me nje cikel qe bredh tabelen dhe afishon listat ne pozicionet e tabeles.
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Koha e ekzekutimit kur skedari kishte 100 fjale=0.15 sekonda
+
+Koha e ekzekutimit kur skedari kishte 1000 fjale  = 0.22 sekonda
+
+Koha e ekzekutimit kur skedari kishte 10000 fjale  = 1.2 sekonda
+
+Koha e ekzekutimit kur skedari kishte 100000 fjale  = 4.4 sekonda
+
+Koha e ekzekutimit kur skedari kishte 1000000 fjale  =14.5 sekonda
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+Kjo menyre e implementimit te fjalorit ishte me  efikase se  listat e lidhura
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+Kompleksiteti
+
+
+
+Shtimi ne rastin me te keq eshte n*Texe pra rasti ku te gjitha fjalet vendosen ne nje pozicion te tabeles pasi duhet kontollluar nqs fjala ndodhet ne listen me ate pozicion
+
+Afishimin kerkon kohen n*Texe ne rastin me te keq kur jan vendosur te gjitha ne nje pozicion
+
+Marrja e fjaleve nga skedari :
+n*Texe
+
+n*Texe1+n*Texe2+n*Texe3=n*(Texe1+Texe2+Texe3) =>kompleksiteti eshte O(n)  
+ne rastin me te keq
+
+
+
+ku:
+   
+
+Texe1=koha ekzekutimit te opeacioneve te vlerdhenies
+Texe2=koha ekzekutimit te operacioneve te afishimit
+   
+Texe3=koha ekzekutimit te operacioneve te leximit nga skedari	

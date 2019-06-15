@@ -1,0 +1,49 @@
+Pershkrimi
+
+Iplementimi i fjalorit me listat e lidhura.Shtimi behet gjithmone ne fillim te kokes por para se te behet shtimi behet kontrolloi nqs fjala ndodhet ne liste. Me pas behet afishimi duke nisur nga koka listes deri ne fund te saj.
+
+
+==============================================================================================================
+
+
+
+
+
+
+Koha e ekzekutimit kur skedari kishte 100 fjale=0.06 sekonda
+
+Koha e ekzekutimit kur skedari kishte 1000 fjale  = 0.2 sekonda
+
+Koha e ekzekutimit kur skedari kishte 10000 fjale  = 1.1 sekonda
+
+Koha e ekzekutimit kur skedari kishte 100000 fjale  = 9.7 sekonda
+Koha e ekzekutimit kur skedari kishte 1000000 fjale  = 265.5 sekonda
+--------------------------------------------------------------------------------------------------------------
+
+
+Kjo menyre e implementimit te fjalorit ishte me pak efikasja nga rezultatet
+
+
+--------------------------------------------------------------------------------------------------------------
+Kompleksitet
+
+
+
+Shtimi ne rastin me te keq eshte n*Texe pasi do te kontrollohet gjithe lista nqs e permban celsin
+
+Afishimin kerkon kohen n*Texe
+
+Marrja e fjaleve nga skedari 
+n*Texe
+
+n*Texe1+n*Texe2+n*Texe3=n*(Texe1+Texe2+Texe3) =>kompleksiteti eshte O(n)
+
+
+
+ku:
+   
+Texe1=koha ekzekutimit te opeacioneve te vlerdhenies  
+   
+Texe2=koha ekzekutimit te operacioneve te afishimit
+   
+Texe3=koha ekzekutimit te operacioneve te leximit nga skedari

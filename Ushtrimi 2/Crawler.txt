@@ -1,0 +1,17 @@
+Pershkrimi i Algoritmit
+
+Algoritmin e kam implementuar ne java.Si fillim kam ndertuar crawler qe do te kete 3 variabla instance.Do te kete nje Set te implemntuar me hashTable qe do t me ruaj te gjitha linket qe jan vizituar.Do te kete nje struktur te tipit radhe ku do t ruaj linket qe nk jane vizituar por do te vizitohen ne kerimi e radhes.Do te kete dhe nje radhe temporare qe me duhej per te bere veprimet e ndermjetme gjat kontrollimit te nje linku.konstruktori do te kete vetem nje link qe merret nga perdoruesi dhe i vendoset radhes qe ndodhen linket e pavizituara.Me pas kam ber metoden crawl qe do te bej kerkimin e te gjitha linkeve qe ndodhen tek linket e pavizituara.Tek klasa testuese kam krijuar nje objekt te tipit crawler dhe me pas me anen e nje cikli kam ber kerkimin me thelesin e dhene si input nga perdoruesi duke therritur metoden crawl.Gjate ekzekutimit te metdoes te gjitha linket qe ndodheshin tek radha e linkeve  te vizituar kalohen tek radha temporare pasi radha e linkeve te vizituara do te mbushet me linket e reja qe do te gjenden.Me pas me anen e nje cikli behet vizitimi i te gjithe linkeve qe ndodhen ne radhen temporare.Nqs ndonje nga linket qe ndodhet ne radhen temporare ndodhet dhe ne setin e linkeve te pavizituara atehere nk e vizitojme me kete link por kalojm te llinku tjeter.Te gjitha linket qe gjenden ne linket e radhes temporare vendosen ne radhen e linkeve te pavizituara.pasi kemi mbaruar pune me nje link ne radhen temporare e fusim ate ne setin e linkeve te pavizituara. 
+
+
+Kompleksiteti
+
+Kalimi i linkeve nga radha e linkeve te pavizituara tek radha temporare kerkon kohen n*N*Texe
+Vizitimi i te gjitha linkeve qe ndodhen ne radhen temporare eshte n*N*Texe
+Shtimi i keyre linkeve ne Set eshte n*N*Texe ne rastin me te keq
+Kontrolli qe nje link ndodhet apo jo ne set ne rastin me te keq eshte n*N*Texe
+ -ku n eshte nr i linkeve dhe N eshte  thellesia 
+n*N*Texe1+n*N*Texe2+n*N*Texe1+n*N*Texe3=n*n(2Texe1+Texe2+Texe3)=>kompleksiteti =O(n^2)
+-ku:
+Texe1=Koha ekzeutimit te operacioneve te vlerdhenies
+Texe2=Koha ekzekutimit te operacioneve qe lidhen me klikimin e linkeve
+Texe3=Koha ekzekutimit te operacioneve te  kontrollit

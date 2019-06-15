@@ -1,0 +1,3 @@
+Per te ekzekutuar programin nga komand promt duhet t e shkoni me vommandpromt ne direktorine ku e keni ruajtur  dhe te shtypni komanden si ne vijim:
+
+ Crawler.jar      linku i faqes      thellesia e kerkimit       Skedari         

@@ -1,0 +1,69 @@
+Pershkrimi
+
+==============================================================================================================
+
+Implementimi i fjalorit duke perdorur 
+
+==============================================================================================================
+
+Pemen e kerkimit binar per shtimin e elementeve krahasoj madhesine e fjales me nyjen ku ndodhem nqs eshte me e madhe vazhdoj tek fmija djathte i kesaj nyje dhe nqs eshte me e vogel vazhdoj tek femija i majte i kesaj nyje,perndryshe nqs jane te barabarta atehere nk e shtoj.
+Shtimi behet deri sa arrij ne nje gjethe.
+Pasi gjej se ne cilen ane te nyjes se fundit duhet vendosur kjo fjale e shtoj. 
+
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Koha e ekzekutimit kur skedari kishte 100 fjale=0.1 sekonda
+
+Koha e ekzekutimit kur skedari kishte 1000 fjale  = 0.18 sekonda
+
+Koha e ekzekutimit kur skedari kishte 10000 fjale  = 1.01 sekonda
+
+Koha e ekzekutimit kur skedari kishte 100000 fjale  = 2.9 sekonda
+
+Koha e ekzekutimit kur skedari kishte 1000000 fjale  =13.1 sekonda
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+Kjo menyre e implementimit te fjalorit ishte me mire se tabela Hash
+
+
+
+--------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Kompleksiteti
+
+
+Shtimi ne rastin me te keq eshte n*Texe pasi mnd te vijne elementet e radhitur dhe do te vendoseshin vetem ne njeren ane te pemes.
+Afishimi  kerkon kohen n*Texe pasi do te afishohen te gjith elementet e pemes.
+
+Leximi nka skedari kerkon kohen:
+n*Texe  te leximit te nje fjale nga skedari
+
+ n*Texe1+n*Texe2+n*Texe3=n*(Texe1+Texe2+Texe3) 
+=>kompleksiteti eshte O(n)  ne rastin me te keq
+
+
+
+ku:
+   
+
+Texe1=koha ekzekutimit te opeacioneve te vlerdhenies  
+   
+Texe2=koha ekzekutimit te operacioneve te afishimit
+   
+Texe3=koha ekzekutimit te operacioneve te leximit nga skedari
